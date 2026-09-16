@@ -99,7 +99,6 @@ Le travail est réalisé en équipe grâce à une communication régulière et �
 
 * README.md : contient la présentation du projet.
 * diagrammes : contient les diagrammes.
-* documentation : contient les documents d’analyse.
 
 ## Date
 
