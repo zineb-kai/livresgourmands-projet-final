@@ -6,11 +6,13 @@
 
 Les utilisateurs peuvent chercher des livres, voir leurs informations et les ajouter au panier. Ils peuvent ensuite commander les livres et payer en ligne de manière sécurisée.
 
-Les clients peuvent aussi créer une liste de cadeaux, donner une note à un livre et écrire un commentaire.
+Le projet offre également des fonctions plus interactives. Un client peut créer et partager une liste de cadeaux, donner une note à un livre acheté et soumettre un commentaire. Afin de garantir la qualité du contenu publié, les commentaires doivent être vérifiés avant leur affichage.
+
+Enfin, une partie réservée au personnel permet de gérer les ouvrages, les catégories, le stock, les utilisateurs, les ventes et les transactions.
 
 ## Objectifs:
   
-Cette première étape sert à préparer les bases du projet. Nous devons :
+Cette étape consiste à préparer les fondations du projet. Elle nous permet de comprendre le besoin, de déterminer les fonctions importantes du site et de représenter son fonctionnement:
 
 * Lire et comprendre le cahier des charges.
 * Trouver les acteurs du système.
@@ -42,6 +44,7 @@ Le site permet de :
 * Consulter les ventes et les paiements.
 
 ## Acteurs du système
+Le système comprend des utilisateurs du Front Office, des membres du Back Office et un service externe.
 
 ### Front Office
 
@@ -57,7 +60,7 @@ Le site permet de :
 
 ### Système externe
 
-* Prestataire de paiement : traite et sécurise les paiements en ligne.
+* Prestataire de paiement sécurisé : traite les paiements et confirme les transactions effectuées en ligne.
 
 ## Technologies prévues
 
@@ -90,7 +93,7 @@ Le site permet de :
 * Vérifier les relations et les cardinalités.
 * Vérifier les règles de gestion.
 
-Les deux membres participent à toutes les étapes du projet. Ils sont responsables de l’analyse, de la conception et de la vérification du travail.
+Le travail est réalisé en équipe grâce à une communication régulière et à une mise en commun des idées. Chaque membre contribue aux décisions et vérifie le travail avant la remise finale.
 
 ## Organisation du dépôt
 
