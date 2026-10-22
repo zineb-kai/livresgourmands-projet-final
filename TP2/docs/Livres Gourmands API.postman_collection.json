@@ -1,0 +1,533 @@
+{
+  "info": {
+    "_postman_id": "3ddba6bb-f6e4-4c19-ac6f-3689f933c8d4",
+    "name": "Livres Gourmands API",
+    "description": "Collection de démarrage pour tester l'API. Définir jwt_token après une connexion réussie. Ne pas enregistrer de vrai mot de passe ou de token dans la collection.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "57977444",
+    "_collection_link": "https://go.postman.co/collection/57977444-3ddba6bb-f6e4-4c19-ac6f-3689f933c8d4?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Authentification",
+      "item": [
+        {
+          "name": "Connexion (remplacer les identifiants)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"VOTRE_EMAIL_DE_TEST\",\n  \"password\": \"VOTRE_MOT_DE_PASSE_DE_TEST\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/api/auth/login",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "auth",
+                "login"
+              ]
+            },
+            "description": "Après la connexion, copiez le token de la réponse dans la variable jwt_token. Ne sauvegardez pas votre vrai mot de passe dans la collection."
+          },
+          "response": []
+        },
+        {
+          "name": "Profil courant",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{jwt_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/users/me",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "users",
+                "me"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Catégories",
+      "item": [
+        {
+          "name": "Lister les catégories",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/categories",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "categories"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Créer une catégorie de test",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{jwt_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nom\": \"Categorie Postman\",\n  \"description\": \"Categorie pour les tests\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/api/categories",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "categories"
+              ]
+            },
+            "description": "Route protégée. Évitez de créer plusieurs catégories portant le même nom."
+          },
+          "response": []
+        },
+        {
+          "name": "Modifier une catégorie",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{jwt_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nom\": \"Categorie modifiee\",\n  \"description\": \"Description mise a jour\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/api/categories/{{categorie_id}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "categories",
+                "{{categorie_id}}"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Supprimer une catégorie de test",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{jwt_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/categories/{{categorie_id}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "categories",
+                "{{categorie_id}}"
+              ]
+            },
+            "description": "Utilisez uniquement une catégorie de test non utilisée par un ouvrage."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Ouvrages et commentaires",
+      "item": [
+        {
+          "name": "Lister les ouvrages",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{jwt_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/ouvrages",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "ouvrages"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Créer un ouvrage de test",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{jwt_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"titre\": \"Ouvrage Postman\",\n  \"auteur\": \"Auteur Test\",\n  \"isbn\": \"9780000000012\",\n  \"description\": \"Ouvrage de test\",\n  \"prix\": 12.99,\n  \"stock\": 5,\n  \"categorie_id\": 1\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/api/ouvrages",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "ouvrages"
+              ]
+            },
+            "description": "Utilisez un ISBN unique et une catégorie existante."
+          },
+          "response": []
+        },
+        {
+          "name": "Avis d'un ouvrage",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/avis/ouvrage/{{ouvrage_id}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "avis",
+                "ouvrage",
+                "{{ouvrage_id}}"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Commentaires d'un ouvrage",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/commentaires/ouvrage/{{ouvrage_id}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "commentaires",
+                "ouvrage",
+                "{{ouvrage_id}}"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Panier et commandes",
+      "item": [
+        {
+          "name": "Consulter le panier",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{jwt_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/panier",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "panier"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Lister les commandes",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{jwt_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/commandes",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "commandes"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Détail d'une commande",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{jwt_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/commandes/{{commande_id}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "commandes",
+                "{{commande_id}}"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Ajouter un article au panier",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{jwt_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"ouvrage_id\": 2,\r\n  \"quantite\": 1\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/panier/items",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "panier",
+                "items"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Listes de cadeaux",
+      "item": [
+        {
+          "name": "Consulter une liste par code",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/listes/b856d6fc857070b6",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "listes",
+                "b856d6fc857070b6"
+              ]
+            },
+            "description": "Remplacez VOTRE_CODE_PARTAGE par un code de partage existant."
+          },
+          "response": []
+        },
+        {
+          "name": "Ajouter un ouvrage à une liste cadeau",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": ""
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{jwt_token}}",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:3000"
+    },
+    {
+      "key": "jwt_token",
+      "value": ""
+    },
+    {
+      "key": "ouvrage_id",
+      "value": "2"
+    },
+    {
+      "key": "categorie_id",
+      "value": "1"
+    },
+    {
+      "key": "commande_id",
+      "value": "1"
+    }
+  ]
+}
