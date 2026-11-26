@@ -1,3 +1,6 @@
-
 node_modules/
 .env
+.env.*
+sql/backup_*.sql
+*.backup.sql
+*.log

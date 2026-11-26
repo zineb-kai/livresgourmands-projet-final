@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 820" width="1440" height="820" font-family="Arial, sans-serif">
+  <rect width="1440" height="820" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1440" height="72" fill="#333333"/>
+  <text x="40" y="42" fill="#FFFFFF" font-size="16" font-weight="700">LivresGourmands.net — Panier [2]</text>
+  <text x="80" y="130" fill="#333333" font-size="28" font-weight="700">Mon panier (2 articles sélectionnés)</text>
+  <rect x="1030" y="100" width="170" height="34" rx="4" fill="#F2F2F2" stroke="#999999"/><text x="1115" y="122" text-anchor="middle" fill="#333333" font-size="12">← Continuer mes achats</text>
+  <rect x="1216" y="100" width="144" height="34" rx="4" fill="#FFFFFF" stroke="#777777"/><text x="1288" y="122" text-anchor="middle" fill="#333333" font-size="12">Vider le panier</text>
+
+  <!-- Cart items left (8 cols) -->
+  <g>
+    <rect x="80" y="168" width="840" height="150" rx="8" fill="#F9F9F9" stroke="#CCCCCC" stroke-width="1.5"/>
+    <rect x="104" y="192" width="76" height="102" rx="4" fill="#D9D9D9"/><text x="142" y="246" text-anchor="middle" fill="#555555" font-size="10">[Mini]</text>
+    <text x="204" y="220" fill="#333333" font-size="16" font-weight="700">Titre de l'ouvrage #1</text>
+    <text x="204" y="244" fill="#666666" font-size="13">Auteur • 38,95 $ / unité • [Stock : 12]</text>
+    <rect x="550" y="222" width="130" height="36" rx="4" fill="#FFFFFF" stroke="#888888"/><text x="615" y="245" text-anchor="middle" fill="#333333" font-size="13">−  |  2  |  +</text>
+    <text x="890" y="224" text-anchor="end" fill="#333333" font-size="18" font-weight="700">77,90 $</text>
+    <rect x="800" y="244" width="90" height="30" rx="4" fill="#FFFFFF" stroke="#777777"/><text x="845" y="264" text-anchor="middle" fill="#333333" font-size="12">Supprimer</text>
+
+    <rect x="80" y="340" width="840" height="150" rx="8" fill="#F9F9F9" stroke="#CCCCCC" stroke-width="1.5"/>
+    <rect x="104" y="364" width="76" height="102" rx="4" fill="#D9D9D9"/><text x="142" y="418" text-anchor="middle" fill="#555555" font-size="10">[Mini]</text>
+    <text x="204" y="392" fill="#333333" font-size="16" font-weight="700">Titre de l'ouvrage #2</text>
+    <text x="204" y="416" fill="#666666" font-size="13">Auteur • 19,99 $ / unité • [Stock : 9]</text>
+    <rect x="550" y="394" width="130" height="36" rx="4" fill="#FFFFFF" stroke="#888888"/><text x="615" y="417" text-anchor="middle" fill="#333333" font-size="13">−  |  1  |  +</text>
+    <text x="890" y="396" text-anchor="end" fill="#333333" font-size="18" font-weight="700">19,99 $</text>
+    <rect x="800" y="416" width="90" height="30" rx="4" fill="#FFFFFF" stroke="#777777"/><text x="845" y="436" text-anchor="middle" fill="#333333" font-size="12">Supprimer</text>
+  </g>
+
+  <!-- Summary right (4 cols) -->
+  <rect x="950" y="168" width="410" height="350" rx="8" fill="#F9F9F9" stroke="#CCCCCC" stroke-width="1.5"/>
+  <text x="980" y="210" fill="#333333" font-size="22" font-weight="700">Récapitulatif</text>
+  <text x="980" y="252" fill="#555555" font-size="14">Articles (3)</text><text x="1330" y="252" text-anchor="end" fill="#333333" font-size="14">97,89 $</text>
+  <text x="980" y="284" fill="#555555" font-size="14">Livraison</text><text x="1330" y="284" text-anchor="end" fill="#666666" font-size="12">Choisie à l'étape commande</text>
+  <line x1="980" y1="306" x2="1330" y2="306" stroke="#CCCCCC"/>
+  <text x="980" y="344" fill="#333333" font-size="18" font-weight="700">Total estimé</text><text x="1330" y="344" text-anchor="end" fill="#333333" font-size="22" font-weight="700">97,89 $</text>
+  <rect x="980" y="370" width="350" height="52" rx="6" fill="#EFEFEF" stroke="#CCCCCC"/><text x="1155" y="401" text-anchor="middle" fill="#555555" font-size="12">Panier persisté localStorage &amp; synchronisé API</text>
+  <rect x="980" y="440" width="350" height="48" rx="6" fill="#444444"/><text x="1155" y="469" text-anchor="middle" fill="#FFFFFF" font-size="15" font-weight="700">Valider la commande</text>
+
+  <rect x="0" y="710" width="1440" height="110" fill="#333333"/>
+  <text x="80" y="770" fill="#CCCCCC" font-size="13">Pied de page — LivresGourmands.net</text>
+</svg>

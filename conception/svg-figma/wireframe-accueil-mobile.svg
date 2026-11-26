@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 844" width="390" height="844" font-family="Arial, sans-serif">
+  <rect width="390" height="844" fill="#FFFFFF"/>
+  <!-- Mobile Header -->
+  <rect x="0" y="0" width="390" height="60" fill="#333333"/>
+  <text x="18" y="36" fill="#FFFFFF" font-size="15" font-weight="700">LivresGourmands.net</text>
+  <rect x="336" y="18" width="36" height="24" rx="4" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+  <line x1="344" y1="25" x2="364" y2="25" stroke="#FFFFFF" stroke-width="2"/>
+  <line x1="344" y1="30" x2="364" y2="30" stroke="#FFFFFF" stroke-width="2"/>
+  <line x1="344" y1="35" x2="364" y2="35" stroke="#FFFFFF" stroke-width="2"/>
+  <!-- Hero -->
+  <rect x="0" y="60" width="390" height="260" fill="#D9D9D9"/>
+  <rect x="20" y="84" width="160" height="20" rx="4" fill="#8C8C8C"/>
+  <rect x="20" y="116" width="330" height="36" rx="4" fill="#555555"/><text x="32" y="140" fill="#FFFFFF" font-size="15" font-weight="700">Carrousel Mobile (3 slides)</text>
+  <rect x="20" y="164" width="310" height="14" rx="2" fill="#999999"/>
+  <rect x="20" y="186" width="260" height="14" rx="2" fill="#999999"/>
+  <rect x="20" y="218" width="210" height="38" rx="6" fill="#444444"/><text x="125" y="242" text-anchor="middle" fill="#FFFFFF" font-size="13">Découvrir le catalogue</text>
+  <circle cx="178" cy="296" r="4" fill="#333333"/><circle cx="195" cy="296" r="4" fill="#999999"/><circle cx="212" cy="296" r="4" fill="#999999"/>
+  <!-- Search + Filters -->
+  <rect x="16" y="338" width="358" height="118" rx="8" fill="#F5F5F5" stroke="#CCCCCC"/>
+  <rect x="28" y="356" width="236" height="34" rx="4" fill="#FFFFFF" stroke="#999999"/><text x="38" y="378" fill="#777777" font-size="12">Titre, auteur ou ISBN...</text>
+  <rect x="268" y="356" width="94" height="34" rx="4" fill="#555555"/><text x="315" y="378" text-anchor="middle" fill="#FFFFFF" font-size="12">Chercher</text>
+  <rect x="28" y="406" width="84" height="28" rx="4" fill="#555555"/><text x="70" y="424" text-anchor="middle" fill="#FFFFFF" font-size="11">Toutes (26)</text>
+  <rect x="120" y="406" width="84" height="28" rx="4" fill="#FFFFFF" stroke="#999999"/><text x="162" y="424" text-anchor="middle" fill="#333333" font-size="11">Cuisine (4)</text>
+  <rect x="212" y="406" width="84" height="28" rx="4" fill="#FFFFFF" stroke="#999999"/><text x="254" y="424" text-anchor="middle" fill="#333333" font-size="11">Romans (5)</text>
+  <!-- Card 1 -->
+  <text x="16" y="486" font-size="16" font-weight="700" fill="#333333">Sélection (1 colonne)</text>
+  <rect x="16" y="500" width="358" height="250" rx="8" fill="#F9F9F9" stroke="#CCCCCC"/>
+  <rect x="16" y="500" width="358" height="120" rx="8" fill="#D9D9D9"/><text x="195" y="566" text-anchor="middle" fill="#666666" font-size="13">[Couverture Ouvrage]</text>
+  <rect x="30" y="634" width="180" height="16" rx="3" fill="#555555"/>
+  <rect x="30" y="660" width="110" height="14" rx="2" fill="#999999"/>
+  <rect x="30" y="694" width="330" height="38" rx="4" fill="#555555"/><text x="195" y="718" text-anchor="middle" fill="#FFFFFF" font-size="13">Ajouter au panier</text>
+  <!-- Footer -->
+  <rect x="0" y="772" width="390" height="72" fill="#333333"/>
+  <text x="195" y="814" text-anchor="middle" fill="#CCCCCC" font-size="12">Footer empilé (1 colonne) — LivresGourmands.net</text>
+</svg>

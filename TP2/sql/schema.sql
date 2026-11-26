@@ -1,9 +1,8 @@
-
-CREATE DATABASE IF NOT EXISTS livresgourmands
+CREATE DATABASE IF NOT EXISTS livresgourmands_db
 CHARACTER SET utf8mb4
 COLLATE utf8mb4_unicode_ci;
 
-USE livresgourmands;
+USE livresgourmands_db;
 
 -- 1. Utilisateurs
 CREATE TABLE users (

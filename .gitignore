@@ -1,0 +1,30 @@
+# Dépendances et artefacts de build
+node_modules/
+frontend/dist/
+
+# Fichiers d'environnement et secrets (ne jamais publier sur GitHub)
+.env
+.env.*
+!.env.example
+
+# Sauvegardes privées de base de données (contiennent des comptes utilisateurs)
+TP2/sql/backup_*.sql
+**/backup_*.sql
+*.backup.sql
+
+# Fichiers système, journaux et fichiers temporaires Office
+*.log
+.DS_Store
+Thumbs.db
+~$*
+**/~$*
+
+# Captures intermédiaires du montage vidéo (seuls la vidéo MP4 finale et le script sont suivis)
+demonstration-video/01-parcours-client/
+demonstration-video/02-parcours-ami/
+demonstration-video/03-parcours-administrateur/
+demonstration-video/04-prototype-figma/
+
+# Archives préparatoires Adobe XD remplacées par le prototype interactif Figma
+conception/prototype-xd/
+conception/guide-prototype-adobe-xd.md

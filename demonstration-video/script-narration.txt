@@ -1,0 +1,177 @@
+================================================================================
+SCRIPT DE NARRATION — VIDÉO DE DÉMONSTRATION FINALE (4 min 30 s à 5 min 00 s)
+Projet : LivresGourmands.net — Librairie en ligne (Étape 03)
+Cours  : Programmation Web avancée (420-WA6-AG) — Institut Grasset, Automne 2026
+Équipe : Zineb Idrissi Kaitouni & Abdelbasite Rhidouani
+================================================================================
+
+Conseils d'enregistrement :
+- Parlez sur un rythme calme et posé (~135 à 145 mots par minute).
+- Laissez 1 à 2 secondes de respiration entre chaque grande partie.
+- Ne mentionnez aucun mot de passe à l'oral.
+- Les 26 captures ci-dessous constituent la sélection recommandée pour un montage
+  fluide d'environ 4 minutes 45 secondes (durées indicatives entre crochets).
+
+--------------------------------------------------------------------------------
+INTRODUCTION (0:00 – 0:25)
+--------------------------------------------------------------------------------
+
+[Capture 01-parcours-client/01-verification-connexion-mysql-api.png — 8 s]
+« Bonjour. Nous vous présentons aujourd’hui LivresGourmands.net, notre librairie
+en ligne complète réalisée dans le cadre de l’étape 03 du cours Programmation Web
+avancée à l’Institut Grasset. L’application repose sur un front-end React et
+Bootstrap connecté en temps réel à notre API REST Node.js / Express et à notre
+base de données MySQL, comme le confirme la route de vérification de santé. »
+
+[Capture 01-parcours-client/11-accueil-propre-pret-demonstration.png — 17 s]
+« Voici la page d’accueil de l’application réelle. Nous avons conçu une identité
+visuelle de librairie chaleureuse et lisible, associant le bleu encre, le
+terracotta, le vert sauge et un fond crème papier. Dès l’ouverture, l’utilisateur
+accède à une barre de recherche rapide, à des filtres par catégorie et à une
+sélection dynamique alimentée par nos 26 ouvrages répartis dans 6 catégories. »
+
+--------------------------------------------------------------------------------
+PARTIE 1 — PARCOURS CLIENT SUR L'APPLICATION RÉELLE (0:25 – 2:05)
+--------------------------------------------------------------------------------
+
+[Capture 01-parcours-client/14-catalogue-26-ouvrages-recherche-filtres.png — 15 s]
+« En ouvrant le catalogue, les 26 ouvrages s’affichent avec leurs couvertures
+vectorielles locales, leur prix, leur catégorie et leur état de stock réel en
+base de données. L’utilisateur peut rechercher instantanément un livre par titre,
+auteur ou numéro ISBN — par exemple Escoffier — ou filtrer directement par
+catégorie telle que Cuisine et gastronomie. »
+
+[Capture 01-parcours-client/07-connexion-claire-gourmande.png — 10 s]
+« Pour effectuer un achat, l’utilisatrice se connecte avec son compte client de
+démonstration, Claire Gourmande. L’authentification est sécurisée par jeton JWT
+et vérification bcrypt côté serveur, avec masquage complet du mot de passe. »
+
+[Capture 01-parcours-client/15-fiche-ouvrage-avis-commentaires.png — 14 s]
+« Sur la fiche détaillée d’un ouvrage comme Le Guide Culinaire, le client
+consulte la description complète, le stock disponible, les avis d’acheteurs
+vérifiés avec note moyenne sur 5 étoiles, ainsi que la section des commentaires
+soumis à modération éditeur ou administrateur. »
+
+[Capture 01-parcours-client/16-panier-le-guide-culinaire.png — 14 s]
+« Après l’ajout au panier, l’état global est géré par React Context API, persisté
+en localStorage et synchronisé avec l’API MySQL. Le client peut ajuster les
+quantités dans la limite du stock disponible : en passant de un à deux
+exemplaires, le sous-total et le total estimé se recalculent automatiquement. »
+
+[Capture 01-parcours-client/17-commandes-formulaire-paiement-test.png — 14 s]
+« À l’étape Commandes et Paiement, l’utilisateur renseigne son adresse de
+livraison, choisit son mode d’envoi — standard gratuit, rapide à 4,99 dollars ou
+24 heures chrono — et sélectionne le paiement simulé en mode test académique.
+Aucune transaction bancaire réelle n’est effectuée. »
+
+[Capture 01-parcours-client/18-confirmation-commande-9-et-historique.png — 12 s]
+« Une fois le paiement test validé, la commande numéro 9 est enregistrée dans
+MySQL en transaction atomique pour un montant total de 82,89 dollars, le panier
+se vide automatiquement et le stock est décrémenté en base de données. »
+
+[Capture 01-parcours-client/19-modale-details-commande-9.png — 10 s]
+« En cliquant sur Détails, la fenêtre récapitulative affiche l’ensemble des
+informations vérifiées de la commande : référence de transaction test, adresse,
+articles commandés, frais de livraison et statut Payée. »
+
+[Capture 01-parcours-client/21-profil-claire-gourmande-mis-a-jour.png — 11 s]
+« Enfin, sur la page Mon profil, les statistiques de Claire Gourmande reflètent
+immédiatement son nouvel achat : deux commandes passées, 132,86 dollars d’achats
+cumulés, une liste cadeau active et un avis publié. »
+
+--------------------------------------------------------------------------------
+PARTIE 2 — PARCOURS AMI : LISTE CADEAU PARTAGÉE (2:05 – 2:55)
+--------------------------------------------------------------------------------
+
+[Capture 02-parcours-ami/01-acces-liste-cadeau-code-personnel.png — 10 s]
+« Passons maintenant au parcours Ami avec le compte de démonstration Marc
+Lecteur. Depuis le menu Liste d’un ami, il suffit de saisir le code personnel
+partagé par un proche pour accéder à sa sélection de livres souhaités. »
+
+[Capture 02-parcours-ami/02-liste-partagee-anniversaire-avant-cadeau.png — 14 s]
+« Voici la Liste d’anniversaire préparée par Claire Gourmande. Elle affiche
+l’ouvrage souhaité, Le livre de test à 19,99 dollars, avec un stock initial de
+neuf exemplaires et une quantité souhaitée de deux. Point essentiel de sécurité :
+aucune adresse postale privée ni adresse courriel du destinataire n’est exposée. »
+
+[Capture 02-parcours-ami/03-modale-offrir-ouvrage-mode-test.png — 12 s]
+« En cliquant sur Offrir cet ouvrage en mode test, une fenêtre de confirmation
+permet à l’ami de finaliser le cadeau sans jamais voir les coordonnées privées
+de Claire Gourmande, la livraison restant gérée de façon confidentielle. »
+
+[Capture 02-parcours-ami/04-cadeau-offert-succes-stock-et-quantite-actualises.png — 14 s]
+« Dès la confirmation de la commande cadeau numéro 10, un message de succès
+s’affiche et l’interface se met à jour en temps réel depuis MySQL : le stock
+passe de neuf à huit exemplaires, et la quantité souhaitée diminue de deux à un. »
+
+--------------------------------------------------------------------------------
+PARTIE 3 — PARCOURS ADMINISTRATEUR : DASHBOARD PROTÉGÉ (2:55 – 3:35)
+--------------------------------------------------------------------------------
+
+[Capture 03-parcours-administrateur/01-dashboard-admin-vue-ensemble-kpis-mysql.png — 22 s]
+« Connectons-nous à présent au tableau de bord protégé avec le compte
+administrateur. L’accès est vérifié à la fois par React Router et par notre
+middleware backend JWT avec contrôle des rôles RBAC. La vue d’ensemble affiche
+les indicateurs réels issus de MySQL : 26 ouvrages dont deux en rupture de stock,
+6 catégories, 4 commandes clients incluant celles que nous venons de créer, un
+chiffre d’affaires actualisé à 177,84 dollars et 6 utilisateurs inscrits. »
+
+[Capture 03-parcours-administrateur/02-dashboard-admin-moderation-commentaires.png — 18 s]
+« Depuis la navigation latérale, l’administrateur gère l’ensemble de la boutique :
+le catalogue des ouvrages, les catégories, la modération des commentaires — ici
+aucun commentaire en attente et un commentaire déjà validé —, le suivi des
+commandes avec transitions de statut sécurisées, ainsi que les comptes
+utilisateurs sans jamais exposer aucun hash de mot de passe. »
+
+--------------------------------------------------------------------------------
+PARTIE 4 — PROTOTYPE INTERACTIF FIGMA : DESKTOP & MOBILE (3:35 – 4:45)
+--------------------------------------------------------------------------------
+
+[Capture 04-prototype-figma/02-figma-desktop-accueil-client.png — 12 s]
+« Pour conclure, voici notre prototype interactif haute fidélité réalisé dans
+Figma. Il est important de bien distinguer cette phase de conception UX/UI de
+l’application réelle présentée juste avant : ici, les écrans et transitions sont
+des simulations interactives destinées à valider l’ergonomie et les parcours. »
+
+[Capture 04-prototype-figma/04-figma-desktop-catalogue.png — 8 s]
+[Capture 04-prototype-figma/05-figma-desktop-fiche-ouvrage.png — 8 s]
+[Capture 04-prototype-figma/08-figma-desktop-panier-vue-complete.png — 8 s]
+« En version Desktop, le panneau latéral permet d’explorer trois parcours
+cliquables complets. Le premier présente le parcours Client : accueil, catalogue,
+fiche ouvrage Le Guide Culinaire, panier dynamique et tunnel de commande simulé. »
+
+[Capture 04-prototype-figma/11-figma-desktop-parcours-ami-liste-partagee.png — 7 s]
+[Capture 04-prototype-figma/15-figma-desktop-ami-modale-cadeau.png — 7 s]
+[Capture 04-prototype-figma/17-figma-desktop-ami-cadeau-offert-succes.png — 8 s]
+« Le deuxième parcours Desktop simule le parcours Ami : consultation de la liste
+partagée sans adresse privée, fenêtre modale de confirmation du cadeau et mise à
+jour visuelle simulée du stock de neuf à huit et de la quantité de deux à un. »
+
+[Capture 04-prototype-figma/18-figma-desktop-parcours-admin-connexion.png — 6 s]
+[Capture 04-prototype-figma/19-figma-desktop-parcours-admin-dashboard.png — 7 s]
+[Capture 04-prototype-figma/21-figma-desktop-parcours-admin-gestion-ouvrages.png — 6 s]
+[Capture 04-prototype-figma/20-figma-desktop-parcours-admin-moderation-commandes.png — 7 s]
+« Le troisième parcours Desktop illustre l’interface d’administration : connexion
+dédiée, tableau de bord synthétique, gestion des ouvrages, modération des
+commentaires et suivi des commandes. »
+
+[Capture 04-prototype-figma/22-figma-mobile-accueil.png — 6 s]
+[Capture 04-prototype-figma/23-figma-mobile-fiche-ouvrage.png — 6 s]
+[Capture 04-prototype-figma/24-figma-mobile-liste-partagee.png — 6 s]
+[Capture 04-prototype-figma/25-figma-mobile-modale-cadeau.png — 6 s]
+[Capture 04-prototype-figma/26-figma-mobile-cadeau-offert-succes.png — 8 s]
+[Capture 04-prototype-figma/27-figma-mobile-retour-accueil.png — 8 s]
+« Enfin, le prototype comprend une version mobile dédiée au format 390 pixels
+pour le parcours Ami : accueil mobile, fiche produit, liste partagée, modale de
+confirmation, écran de succès confirmant la mise à jour simulée et la livraison
+confidentielle, puis retour fluide vers l’accueil. »
+
+--------------------------------------------------------------------------------
+CONCLUSION (4:45 – 4:58)
+--------------------------------------------------------------------------------
+
+[Capture 01-parcours-client/11-accueil-propre-pret-demonstration.png — 13 s]
+« Ce projet réunit ainsi toute la chaîne de conception et de réalisation web :
+dossier de conception complet, maquettes et prototype interactif Figma, API REST
+Express / MySQL sécurisée et application front-end React responsive. Merci de
+votre attention ! »

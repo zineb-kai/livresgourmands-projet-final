@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 960" width="1440" height="960" font-family="Arial, sans-serif">
+  <rect width="1440" height="960" fill="#FFFFFF"/>
+  <!-- Header -->
+  <rect x="0" y="0" width="1440" height="72" fill="#333333"/>
+  <text x="40" y="42" fill="#FFFFFF" font-size="16" font-weight="700">LivresGourmands.net — Navbar</text>
+  <!-- Breadcrumb + Retour -->
+  <text x="80" y="114" fill="#666666" font-size="13">Accueil / Catalogue / Titre de l'ouvrage</text>
+  <rect x="1180" y="92" width="180" height="32" rx="4" fill="#F2F2F2" stroke="#999999"/><text x="1270" y="113" text-anchor="middle" fill="#333333" font-size="12">← Retour au catalogue</text>
+  <!-- Main Product Panel -->
+  <rect x="80" y="142" width="1280" height="440" rx="8" fill="#F9F9F9" stroke="#CCCCCC" stroke-width="1.5"/>
+  <!-- Cover -->
+  <rect x="112" y="174" width="340" height="376" rx="8" fill="#D9D9D9" stroke="#999999"/>
+  <line x1="112" y1="174" x2="452" y2="550" stroke="#BDBDBD"/>
+  <line x1="452" y1="174" x2="112" y2="550" stroke="#BDBDBD"/>
+  <text x="282" y="366" text-anchor="middle" fill="#555555" font-size="15">[Couverture Grand Format]</text>
+  <!-- Details right -->
+  <rect x="492" y="174" width="120" height="24" rx="4" fill="#555555"/><text x="552" y="190" text-anchor="middle" fill="#FFFFFF" font-size="11">Catégorie</text>
+  <rect x="624" y="174" width="150" height="24" rx="4" fill="#777777"/><text x="699" y="190" text-anchor="middle" fill="#FFFFFF" font-size="11">En stock (12) / Rupture</text>
+  <rect x="492" y="214" width="480" height="34" rx="4" fill="#444444"/><text x="506" y="237" fill="#FFFFFF" font-size="18" font-weight="700">H1 : Titre complet de l'ouvrage</text>
+  <text x="492" y="274" fill="#555555" font-size="15">Par Auteur — ★★★★★ 5.0 / 5 (N avis)</text>
+  <text x="492" y="318" fill="#333333" font-size="28" font-weight="700">38,95 $</text>
+  <rect x="492" y="336" width="820" height="14" rx="2" fill="#BDBDBD"/>
+  <rect x="492" y="358" width="760" height="14" rx="2" fill="#BDBDBD"/>
+  <!-- Specs box -->
+  <rect x="492" y="390" width="820" height="66" rx="6" fill="#EFEFEF" stroke="#CCCCCC"/>
+  <text x="516" y="416" fill="#666666" font-size="11">ISBN</text><text x="516" y="438" fill="#222222" font-size="13" font-weight="700">978-2-08-200803-7</text>
+  <text x="790" y="416" fill="#666666" font-size="11">CATÉGORIE</text><text x="790" y="438" fill="#222222" font-size="13" font-weight="700">Cuisine et gastronomie</text>
+  <text x="1080" y="416" fill="#666666" font-size="11">DISPONIBILITÉ</text><text x="1080" y="438" fill="#222222" font-size="13" font-weight="700">12 disponible(s)</text>
+  <!-- Qty & Actions -->
+  <rect x="492" y="486" width="130" height="44" rx="4" fill="#FFFFFF" stroke="#888888"/><text x="557" y="513" text-anchor="middle" fill="#333333" font-size="14">−  |  1  |  +</text>
+  <rect x="640" y="486" width="230" height="44" rx="6" fill="#444444"/><text x="755" y="513" text-anchor="middle" fill="#FFFFFF" font-size="14" font-weight="700">Ajouter au panier</text>
+  <rect x="888" y="486" width="260" height="44" rx="6" fill="#FFFFFF" stroke="#444444" stroke-width="1.8"/><text x="1018" y="513" text-anchor="middle" fill="#333333" font-size="14">Ajouter à une liste cadeau</text>
+
+  <!-- Avis & Commentaires -->
+  <rect x="80" y="610" width="625" height="270" rx="8" fill="#F9F9F9" stroke="#CCCCCC" stroke-width="1.5"/>
+  <text x="104" y="646" fill="#333333" font-size="18" font-weight="700">Avis des lecteurs (N) — Moyenne X.X / 5</text>
+  <rect x="104" y="666" width="577" height="90" rx="6" fill="#EFEFEF" stroke="#CCCCCC"/><text x="122" y="704" fill="#555555" font-size="13">Formulaire Avis (Étoiles 1–5 + texte — réservé aux acheteurs vérifiés)</text>
+  <rect x="104" y="772" width="577" height="86" rx="6" fill="#FFFFFF" stroke="#CCCCCC"/><text x="122" y="806" fill="#333333" font-size="13">Liste des avis : Nom • Date • Étoiles • [Modifier] [Supprimer]</text>
+
+  <rect x="735" y="610" width="625" height="270" rx="8" fill="#F9F9F9" stroke="#CCCCCC" stroke-width="1.5"/>
+  <text x="759" y="646" fill="#333333" font-size="18" font-weight="700">Commentaires validés (N)</text>
+  <rect x="759" y="666" width="577" height="90" rx="6" fill="#EFEFEF" stroke="#CCCCCC"/><text x="777" y="704" fill="#555555" font-size="13">Formulaire Commentaire (soumis à validation éditeur/admin)</text>
+  <rect x="759" y="772" width="577" height="86" rx="6" fill="#FFFFFF" stroke="#CCCCCC"/><text x="777" y="806" fill="#333333" font-size="13">Liste des commentaires validés : Nom • Date • Contenu</text>
+</svg>

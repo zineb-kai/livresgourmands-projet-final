@@ -1,15 +1,31 @@
-
 const db = require("../config/db");
 
-// Afficher les ouvrages disponibles
-exports.getOuvrages = async () => {
+// Afficher les ouvrages disponibles (ou tous les ouvrages si inclureRupture = true)
+exports.getOuvrages = async (inclureRupture = false) => {
+    const conditionStock = inclureRupture ? "" : "WHERE o.stock > 0";
+
     const [ouvrages] = await db.query(
-        `SELECT * FROM ouvrages
-         WHERE stock > 0
-         ORDER BY titre`
+        `SELECT o.*, c.nom AS categorie_nom
+         FROM ouvrages o
+         LEFT JOIN categories c ON c.id = o.categorie_id
+         ${conditionStock}
+         ORDER BY o.titre`
     );
 
     return ouvrages;
+};
+
+// Récupérer un ouvrage par son identifiant avec le nom de sa catégorie
+exports.getOuvrageById = async (id) => {
+    const [ouvrages] = await db.query(
+        `SELECT o.*, c.nom AS categorie_nom
+         FROM ouvrages o
+         LEFT JOIN categories c ON c.id = o.categorie_id
+         WHERE o.id = ?`,
+        [id]
+    );
+
+    return ouvrages[0] || null;
 };
 
 // Ajouter un ouvrage

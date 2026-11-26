@@ -1,5 +1,4 @@
-
-USE livresgourmands;
+USE livresgourmands_db;
 
 -- Ajouter les categories de test si elles n'existent pas
 INSERT INTO categories (nom)

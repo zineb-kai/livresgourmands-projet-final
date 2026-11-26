@@ -36,6 +36,11 @@ exports.ajouterCategorie = async (req, res) => {
         });
     } catch (error) {
         console.error(error);
+        if (error.code === "ER_DUP_ENTRY") {
+            return res.status(409).json({
+                message: "Une catégorie portant ce nom existe déjà"
+            });
+        }
         res.status(500).json({
             message: "Erreur lors de l'ajout de la categorie"
         });
@@ -73,6 +78,11 @@ exports.modifierCategorie = async (req, res) => {
         });
     } catch (error) {
         console.error(error);
+        if (error.code === "ER_DUP_ENTRY") {
+            return res.status(409).json({
+                message: "Une catégorie portant ce nom existe déjà"
+            });
+        }
         res.status(500).json({
             message: "Erreur lors de la modification de la categorie"
         });

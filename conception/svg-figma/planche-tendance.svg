@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 620" width="1120" height="620" font-family="Inter, Arial, sans-serif">
+  <rect width="1120" height="620" fill="#FAF7F2"/>
+  <text x="40" y="42" font-size="22" font-weight="700" fill="#1E2A38">Planche de tendance — Univers visuel LivresGourmands.net</text>
+  <text x="40" y="64" font-size="12" fill="#5B636C">Direction artistique : librairie contemporaine, chaleur éditoriale, lisibilité et gourmandise</text>
+
+  <!-- Mots-clés d'ambiance -->
+  <rect x="40" y="88" width="460" height="150" rx="10" fill="#FFFFFF" stroke="#E6DFD5" stroke-width="1.5"/>
+  <text x="270" y="136" text-anchor="middle" font-family="Georgia, serif" font-size="30" font-weight="700" fill="#1E2A38" letter-spacing="4">ÉLÉGANCE</text>
+  <text x="270" y="176" text-anchor="middle" font-family="Georgia, serif" font-size="30" font-weight="700" fill="#B85D3B" letter-spacing="4">GOURMANDISE</text>
+  <text x="270" y="216" text-anchor="middle" font-family="Georgia, serif" font-size="30" font-weight="700" fill="#4E6E58" letter-spacing="4">CLARTÉ</text>
+
+  <!-- Aperçu couvertures éditoriales -->
+  <rect x="524" y="88" width="380" height="310" rx="10" fill="#FFFFFF" stroke="#E6DFD5" stroke-width="1.5"/>
+  <text x="546" y="116" font-size="12" font-weight="700" fill="#5B636C">UNIVERS COUVERTURES &amp; TEXTURES</text>
+  <rect x="546" y="132" width="104" height="145" rx="6" fill="#1E2A38"/>
+  <rect x="546" y="132" width="10" height="145" fill="#101820"/>
+  <line x1="564" y1="185" x2="594" y2="185" stroke="#E3B778" stroke-width="2.5"/>
+  <text x="564" y="208" font-family="Georgia, serif" font-size="12" font-weight="700" fill="#FFFFFF">Romans</text>
+
+  <rect x="662" y="132" width="104" height="145" rx="6" fill="#9E4C2E"/>
+  <rect x="662" y="132" width="10" height="145" fill="#5E2917"/>
+  <line x1="680" y1="185" x2="710" y2="185" stroke="#F5D9C3" stroke-width="2.5"/>
+  <text x="680" y="208" font-family="Georgia, serif" font-size="12" font-weight="700" fill="#FFFFFF">Cuisine</text>
+
+  <rect x="778" y="132" width="104" height="145" rx="6" fill="#4E6E58"/>
+  <rect x="778" y="132" width="10" height="145" fill="#2A3E30"/>
+  <line x1="796" y1="185" x2="826" y2="185" stroke="#E4C58E" stroke-width="2.5"/>
+  <text x="796" y="208" font-family="Georgia, serif" font-size="12" font-weight="700" fill="#FFFFFF">Bien-être</text>
+
+  <rect x="546" y="294" width="336" height="84" rx="6" fill="#FAF7F2" stroke="#E6DFD5"/>
+  <text x="564" y="320" font-family="Georgia, serif" font-size="16" font-weight="700" fill="#1E2A38">Playfair Display — Titres éditoriaux</text>
+  <text x="564" y="344" font-size="13" fill="#26292E">Inter — Corps de texte fluide et contrasté</text>
+  <text x="564" y="364" font-size="11" fill="#5B636C">Papier crème doux • Filets fins • Icônes vectorielles légères</text>
+
+  <!-- Composants UI & Micro-ambiance -->
+  <rect x="40" y="256" width="460" height="324" rx="10" fill="#FFFFFF" stroke="#E6DFD5" stroke-width="1.5"/>
+  <text x="64" y="286" font-size="12" font-weight="700" fill="#5B636C">COMPOSANTS &amp; REPÈRES VISUELS</text>
+  <rect x="64" y="306" width="190" height="44" rx="6" fill="#B85D3B"/><text x="159" y="333" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Ajouter au panier</text>
+  <rect x="272" y="306" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#B85D3B" stroke-width="1.8"/><text x="374" y="333" text-anchor="middle" font-size="13" font-weight="600" fill="#B85D3B">Ajouter à une liste cadeau</text>
+  <rect x="64" y="370" width="110" height="28" rx="14" fill="#4E6E58"/><text x="119" y="388" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">En stock (12)</text>
+  <rect x="186" y="370" width="120" height="28" rx="14" fill="#1E2A38"/><text x="246" y="388" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">Gastronomie</text>
+  <rect x="318" y="370" width="128" height="28" rx="14" fill="#DC3545"/><text x="382" y="388" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">Rupture de stock</text>
+
+  <rect x="64" y="422" width="412" height="132" rx="8" fill="#1E2A38"/>
+  <text x="86" y="454" font-family="Georgia, serif" font-size="18" font-weight="700" fill="#FFFFFF">LivresGourmands.net</text>
+  <text x="86" y="478" font-size="12" fill="#F3C6B2">Librairie en ligne — Édition &amp; Gastronomie</text>
+  <text x="86" y="506" font-size="11" fill="#CBD5E1">Contraste WCAG AA validé sur fond sombre (#1E2A38)</text>
+  <text x="86" y="526" font-size="11" fill="#CBD5E1">et sur fond crème papier (#FAF7F2).</text>
+
+  <!-- Colonne Nuancier officiel (à la manière Chloé Bonnevaux) -->
+  <rect x="928" y="88" width="152" height="90" rx="8" fill="#1E2A38"/>
+  <text x="1004" y="130" text-anchor="middle" font-size="12" font-weight="700" fill="#FFFFFF">Bleu encre</text>
+  <text x="1004" y="148" text-anchor="middle" font-size="11" fill="#CBD5E1">#1E2A38</text>
+
+  <rect x="928" y="188" width="152" height="90" rx="8" fill="#B85D3B"/>
+  <text x="1004" y="230" text-anchor="middle" font-size="12" font-weight="700" fill="#FFFFFF">Terracotta</text>
+  <text x="1004" y="248" text-anchor="middle" font-size="11" fill="#FDECE4">#B85D3B</text>
+
+  <rect x="928" y="288" width="152" height="90" rx="8" fill="#4E6E58"/>
+  <text x="1004" y="330" text-anchor="middle" font-size="12" font-weight="700" fill="#FFFFFF">Vert sauge</text>
+  <text x="1004" y="348" text-anchor="middle" font-size="11" fill="#E3EFE7">#4E6E58</text>
+
+  <rect x="928" y="388" width="152" height="90" rx="8" fill="#FAF7F2" stroke="#D5CCC0" stroke-width="1.5"/>
+  <text x="1004" y="430" text-anchor="middle" font-size="12" font-weight="700" fill="#1E2A38">Crème papier</text>
+  <text x="1004" y="448" text-anchor="middle" font-size="11" fill="#5B636C">#FAF7F2</text>
+
+  <rect x="928" y="488" width="152" height="92" rx="8" fill="#FFFFFF" stroke="#D5CCC0" stroke-width="1.5"/>
+  <text x="1004" y="530" text-anchor="middle" font-size="12" font-weight="700" fill="#26292E">Surface &amp; Texte</text>
+  <text x="1004" y="548" text-anchor="middle" font-size="11" fill="#5B636C">#FFFFFF / #26292E</text>
+
+  <!-- Bandeau bas résumé -->
+  <rect x="524" y="416" width="380" height="164" rx="10" fill="#FFFFFF" stroke="#E6DFD5" stroke-width="1.5"/>
+  <text x="546" y="446" font-size="12" font-weight="700" fill="#5B636C">PRINCIPES ERGONOMIQUES</text>
+  <text x="546" y="472" font-size="12" fill="#26292E">• Hiérarchie visuelle immédiate (prix, stock, CTA)</text>
+  <text x="546" y="496" font-size="12" fill="#26292E">• Navigation fluide sur 3 formats (Desktop/Tablette/Mobile)</text>
+  <text x="546" y="520" font-size="12" fill="#26292E">• Retours explicites (succès, erreurs, ruptures)</text>
+  <text x="546" y="544" font-size="12" fill="#26292E">• Focus clavier visible et attributs ARIA complets</text>
+</svg>

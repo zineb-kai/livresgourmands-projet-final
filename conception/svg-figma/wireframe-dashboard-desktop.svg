@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900" font-family="Arial, sans-serif">
+  <rect width="1440" height="900" fill="#FFFFFF"/>
+  <!-- Header -->
+  <rect x="0" y="0" width="1440" height="72" fill="#333333"/>
+  <text x="40" y="42" fill="#FFFFFF" font-size="16" font-weight="700">LivresGourmands.net — Dashboard Protégé (Admin / Éditeur)</text>
+  <!-- Title -->
+  <text x="40" y="122" fill="#333333" font-size="26" font-weight="700">Tableau de bord — Administration</text>
+  <text x="40" y="146" fill="#666666" font-size="13">Route protégée React Router + RBAC backend JWT</text>
+  <rect x="1230" y="96" width="170" height="34" rx="4" fill="#F2F2F2" stroke="#999999"/><text x="1315" y="118" text-anchor="middle" fill="#333333" font-size="12">Actualiser les données</text>
+
+  <!-- Sidebar left -->
+  <rect x="40" y="172" width="240" height="600" rx="8" fill="#F5F5F5" stroke="#CCCCCC" stroke-width="1.5"/>
+  <text x="64" y="206" fill="#666666" font-size="12" font-weight="700">NAVIGATION LATÉRALE</text>
+  <rect x="56" y="222" width="208" height="40" rx="6" fill="#444444"/><text x="72" y="247" fill="#FFFFFF" font-size="13" font-weight="700">Vue d'ensemble</text>
+  <rect x="56" y="274" width="208" height="38" rx="6" fill="#FFFFFF" stroke="#CCCCCC"/><text x="72" y="298" fill="#333333" font-size="13">Ouvrages (26)</text>
+  <rect x="56" y="324" width="208" height="38" rx="6" fill="#FFFFFF" stroke="#CCCCCC"/><text x="72" y="348" fill="#333333" font-size="13">Commentaires (0)</text>
+  <rect x="56" y="374" width="208" height="38" rx="6" fill="#FFFFFF" stroke="#CCCCCC"/><text x="72" y="398" fill="#333333" font-size="13">Catégories (6) — Admin</text>
+  <rect x="56" y="424" width="208" height="38" rx="6" fill="#FFFFFF" stroke="#CCCCCC"/><text x="72" y="448" fill="#333333" font-size="13">Commandes (2) — Admin</text>
+  <rect x="56" y="474" width="208" height="38" rx="6" fill="#FFFFFF" stroke="#CCCCCC"/><text x="72" y="498" fill="#333333" font-size="13">Utilisateurs (6) — Admin</text>
+
+  <!-- 6 KPI cards -->
+  <g>
+    <rect x="310" y="172" width="340" height="126" rx="8" fill="#F9F9F9" stroke="#CCCCCC"/><text x="334" y="206" fill="#666666" font-size="12">OUVRAGES AU CATALOGUE</text><text x="334" y="252" fill="#222222" font-size="30" font-weight="700">26</text><text x="334" y="278" fill="#666666" font-size="12">Dont 2 en rupture de stock</text>
+    <rect x="675" y="172" width="340" height="126" rx="8" fill="#F9F9F9" stroke="#CCCCCC"/><text x="699" y="206" fill="#666666" font-size="12">CATÉGORIES</text><text x="699" y="252" fill="#222222" font-size="30" font-weight="700">6</text><text x="699" y="278" fill="#666666" font-size="12">Thématiques actives</text>
+    <rect x="1040" y="172" width="360" height="126" rx="8" fill="#F9F9F9" stroke="#CCCCCC"/><text x="1064" y="206" fill="#666666" font-size="12">COMMENTAIRES EN ATTENTE</text><text x="1064" y="252" fill="#222222" font-size="30" font-weight="700">0</text><text x="1064" y="278" fill="#666666" font-size="12">Modération éditeur / admin</text>
+
+    <rect x="310" y="318" width="340" height="126" rx="8" fill="#F9F9F9" stroke="#CCCCCC"/><text x="334" y="352" fill="#666666" font-size="12">COMMANDES CLIENTS</text><text x="334" y="398" fill="#222222" font-size="30" font-weight="700">2</text><text x="334" y="424" fill="#666666" font-size="12">Payées / expédiées</text>
+    <rect x="675" y="318" width="340" height="126" rx="8" fill="#F9F9F9" stroke="#CCCCCC"/><text x="699" y="352" fill="#666666" font-size="12">CHIFFRE D'AFFAIRES</text><text x="699" y="398" fill="#222222" font-size="30" font-weight="700">74,96 $</text><text x="699" y="424" fill="#666666" font-size="12">Commandes payées réelles</text>
+    <rect x="1040" y="318" width="360" height="126" rx="8" fill="#F9F9F9" stroke="#CCCCCC"/><text x="1064" y="352" fill="#666666" font-size="12">UTILISATEURS INSCRITS</text><text x="1064" y="398" fill="#222222" font-size="30" font-weight="700">6</text><text x="1064" y="424" fill="#666666" font-size="12">Comptes MySQL (sans hash)</text>
+  </g>
+
+  <!-- CRUD Table preview -->
+  <rect x="310" y="470" width="1090" height="302" rx="8" fill="#F9F9F9" stroke="#CCCCCC" stroke-width="1.5"/>
+  <text x="334" y="508" fill="#333333" font-size="18" font-weight="700">Zone Tableau CRUD (Ouvrages / Catégories / Commandes / Utilisateurs)</text>
+  <rect x="1210" y="484" width="168" height="34" rx="4" fill="#444444"/><text x="1294" y="506" text-anchor="middle" fill="#FFFFFF" font-size="12">+ Ajouter un élément</text>
+  <rect x="334" y="534" width="1044" height="36" fill="#E0E0E0"/><text x="350" y="557" fill="#333333" font-size="12" font-weight="700">ID     |     Titre / Nom     |     Catégorie / Rôle     |     Prix / Total     |     Stock / Statut     |     Actions [Modifier] [Supprimer]</text>
+  <line x1="334" y1="610" x2="1378" y2="610" stroke="#DDDDDD"/>
+  <line x1="334" y1="654" x2="1378" y2="654" stroke="#DDDDDD"/>
+  <line x1="334" y1="698" x2="1378" y2="698" stroke="#DDDDDD"/>
+</svg>

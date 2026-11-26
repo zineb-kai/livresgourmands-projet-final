@@ -1,15 +1,49 @@
-
 const ouvrageModel = require("../models/ouvrageModel");
 
-// Afficher les ouvrages disponibles
+// Afficher les ouvrages (inclut les ruptures de stock si ?tous=true)
 exports.getOuvrages = async (req, res) => {
     try {
-        const ouvrages = await ouvrageModel.getOuvrages();
+        const inclureRupture = req.query.tous === "true";
+        const ouvrages = await ouvrageModel.getOuvrages(inclureRupture);
         res.json(ouvrages);
     } catch (error) {
         console.error(error);
         res.status(500).json({
             message: "Erreur lors de la récupération des ouvrages"
+        });
+    }
+};
+
+// Récupérer un ouvrage par son identifiant
+exports.getOuvrageById = async (req, res) => {
+    try {
+        const { id } = req.params;
+
+        // Vérifier la validité de l'identifiant
+        if (!Number.isInteger(Number(id)) || Number(id) <= 0) {
+            return res.status(400).json({
+                message: "Identifiant invalide"
+            });
+        }
+
+        // Rechercher l'ouvrage dans MySQL
+        const ouvrage = await ouvrageModel.getOuvrageById(id);
+
+        // Vérifier si l'ouvrage existe
+        if (!ouvrage) {
+            return res.status(404).json({
+                message: "Ouvrage introuvable"
+            });
+        }
+
+        // Retourner les informations de l'ouvrage
+        res.status(200).json(ouvrage);
+
+    } catch (error) {
+        console.error(error);
+
+        res.status(500).json({
+            message: "Erreur lors de la récupération de l'ouvrage"
         });
     }
 };
@@ -72,6 +106,7 @@ exports.ajouterOuvrage = async (req, res) => {
 exports.modifierOuvrage = async (req, res) => {
     try {
         const { id } = req.params;
+
         const {
             titre,
             auteur,
@@ -132,6 +167,7 @@ exports.modifierOuvrage = async (req, res) => {
 exports.supprimerOuvrage = async (req, res) => {
     try {
         const { id } = req.params;
+
         const lignes = await ouvrageModel.supprimerOuvrage(id);
 
         if (lignes === 0) {
